@@ -1,8 +1,7 @@
-let nome = prompt("Nome do produto: ");
-let preco = Number(prompt("Preço do produto: "));
-let quantidade = Number(prompt("Quantidade de produtos: "));
+const nomeProduto = prompt("Digite o nome do produto: ");
+const precoProduto = Number(prompt("Digite o precodo produto: "));
 
-let precoT = preco * 3;
-let desconto = precoT * 0.5;
+const desconto = (precoProduto / 2).toFixed(2)
+const valorFinal = ((precoProduto * 8) - desconto).toFixed(2)
 
-document.write(`O valor do descontos será de ${desconto} reais e o preço final sera de ${precoT - desconto}`);
+alert(`Valor final da compra $${valorFinal}`);

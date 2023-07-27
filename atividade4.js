@@ -1,8 +1,8 @@
-let medicamento = prompt("Digite qual é o medicamnto");
-let precoM = Number(prompt("Qual é o preço do medicamento: "));
+let nomeM, preco, precoD
 
-let descontoC = Math.floor((precoM * 100) % 100);
-let descontoT = (precoM - descontoC / 100);
+nomeM = prompt("Digite o nome do medicamento");
+preco = Number(prompt(`Digite o valor adicional do medicamento ${nomeM}`));
 
-alert("O valor do produto é de "+precoM+" e o desconto sera de "+descontoC+ "%\n TOTAL: "+descontoT);
+precoD = Math.floor(preco * 2);
 
+document.write(`Total: ${precoD}`);
